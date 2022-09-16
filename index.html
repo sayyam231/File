@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@900&family=Pacifico&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <title> File System</title>
+    <script src="https://kit.fontawesome.com/725d6801c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <section id="header-section">
+        <div id="logo">
+            <div><img src="images/folder.png" alt=""></div>
+            <div>
+                <h1>File System</h1>
+            </div>
+        </div>
+        <div id="upload">
+            <button id="upload" onclick="document.getElementById('filepicker').click()"> <i class="fa-regular fa-folder-open"></i> Choose Folder </button>
+            <input type="file" id="filepicker" name="fileList" webkitdirectory multiple />
+        </div>
+    </section>
+    <section id="table-section">
+        <table id="listing">
+            <tr id="heading">
+                <th>Name</th>
+                <th>File Size</th>
+                <th>More Details</th>
+            </tr>
+        </table>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
